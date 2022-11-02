@@ -49,7 +49,7 @@ p {
 .btn-branding {
   background-color: var(--branding-color);
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   padding: 18px 30px;
   border-radius: 4px;
 }
@@ -61,8 +61,35 @@ p {
 
 .btn-branding-outline {
   color: var(--branding-color);
-  font-size: 18px;
+  font-size: 15px;
   padding: 18px 30px;
   border-radius: 4px;
   border: 1px solid var(--branding-color);
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .based-text {
+    font-size: 14px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
