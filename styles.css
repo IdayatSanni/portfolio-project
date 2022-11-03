@@ -22,7 +22,7 @@ h1 {
   color: black;
 }
 
-.about-section h1 {
+.content-container h1 {
   font-family: var(--heading-font-family);
   font-size: 64px;
 }
@@ -31,9 +31,16 @@ h2 {
   font-size: 64px;
 }
 
-.about-section h2 {
+.content-container h2 {
   font-family: var(--accent-font-family);
   font-size: 18px;
+}
+
+.content h3 {
+  font-family: var(--accent-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
 }
 
 p {
@@ -43,10 +50,16 @@ p {
   line-height: 2;
 }
 
-.about-section p {
+.content-container p {
   font-family: var(--accent-font-family);
   font-size: 16px;
   font-weight: 400;
+}
+
+.work-para {
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  text-align: center;
 }
 
 .hero {
@@ -55,11 +68,11 @@ p {
   padding: 100px 20px;
 }
 
-.about-section {
+.content-container {
   padding: 100px 60px;
 }
 
-.about-section-information {
+.content {
   margin: 20px;
 }
 
@@ -108,7 +121,7 @@ p {
     font-size: 35px;
   }
 
-  .about-section {
+  .content-container {
     text-align: center;
     padding: 30px 20px;
   }
