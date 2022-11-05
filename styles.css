@@ -143,6 +143,38 @@ nav {
   color: #6c63ff;
 }
 
+footer .email-link {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 10px 14px;
+  color: var(--branding-color);
+  background-color: rgba(108, 99, 255, 0.05);
+  text-decoration: none;
+  border-radius: 50%;
+}
+footer .social-links a:hover {
+  transition: all 100ms ease-in-outs;
+  color: white;
+  background-color: var(--branding-color);
+}
+
+.footer-inquiry {
+  background: #f9f7fe;
+  padding: 30px;
+  border-radius: 10px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 40px;
