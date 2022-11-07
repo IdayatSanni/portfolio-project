@@ -50,6 +50,12 @@ p {
   line-height: 2;
 }
 
+.logo-name {
+  font-size: 20px;
+  margin: 0;
+  color: #c24d2c;
+}
+
 .content-container p {
   font-family: var(--accent-font-family);
   font-size: 16px;
@@ -116,10 +122,22 @@ nav {
   padding: 20px 0;
 }
 
+.nav-hamburger {
+  display: flex;
+  visibility: visible;
+}
+
+/* why did they add position. it doesnt help anything */
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.fa-bars {
+  color: #c24d2c;
+  font-size: 25px;
 }
 
 .nav-links {
@@ -141,6 +159,17 @@ nav {
 
 .nav-links a:hover {
   color: #6c63ff;
+}
+
+.nav-mobile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-button {
+  cursor: pointer;
+  display: none;
 }
 
 footer .email-link {
@@ -189,6 +218,10 @@ footer .social-links a:hover {
     padding: 30px 20px;
   }
 
+  .content-container h1 {
+    font-size: 50px;
+  }
+
   .hero {
     padding: 80px 20px;
   }
@@ -200,5 +233,50 @@ footer .social-links a:hover {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  nav {
+    padding: 10px 0;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  .nav-hamburger {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    align-items: center;
+  }
+
+  .nav-hamburger-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    visibility: visible;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links li {
+    display: inline;
+    list-style: none;
+    margin-left: 0;
+    padding: 5px 0;
+  }
+
+  .logo-name {
+    font-size: 15px;
+    margin: 0;
   }
 }

@@ -35,15 +35,24 @@
   <body>
     <nav>
       <div class="container nav-bar">
-        <div>
-          <img src="images/logo.png" alt="idayat's logo" />
+        <div class="nav-mobile-section">
+          <div class="logo-img">
+            <img src="images/logo.png" alt="idayat's logo" />
+          </div>
+          <div class="toggle-button">
+            <a href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="/index.html" title="Homepage">Home</a></li>
-          <li><a href="/about.html" title="About Idayat">About</a></li>
-          <li><a href="/work.html" title="Idayats work">My work</a></li>
-          <li><a href="/contact.html" title="Contact">Contact</a></li>
-        </ul>
+        <div class="nav-hamburger">
+          <ul class="nav-links">
+            <li><a href="/index.html" title="Homepage">Home</a></li>
+            <li><a href="/about.html" title="About Idayat">About</a></li>
+            <li><a href="/work.html" title="Idayats work">My work</a></li>
+            <li><a href="/contact.html" title="Contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="hero">
@@ -146,11 +155,12 @@
             <i class="fa-brands fa-facebook"></i>
           </a>
         </div>
-        <p>
+        <p class="text-center">
           This project was coded by Idayat Sanni, and it is
           <a href="">open-sourced</a>
         </p>
       </footer>
     </div>
+    <script src="/interact.js"></script>
   </body>
 </html>
