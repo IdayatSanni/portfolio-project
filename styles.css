@@ -184,14 +184,14 @@ footer .email-link:hover {
 }
 
 footer .social-links a {
-  font-size: 18px;
+  font-size: 25px;
   margin: 0 20px;
-  /* padding: 10px 14px; */
+  padding: 10px 14px;
   color: var(--branding-color);
-  background-color: rgba(108, 99, 255, 0.05);
   text-decoration: none;
   border-radius: 50%;
 }
+
 footer .social-links a:hover {
   transition: all 100ms ease-in-outs;
   color: white;
