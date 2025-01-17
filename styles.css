@@ -2,6 +2,10 @@
   --heading-font-family: "Playfair Display", serif;
   --branding-color: #6c63ff;
   --accent-font-family: "Poppins", sans-serif;
+  --mask: radial-gradient(47.34px at 50% 64.8px, #000 99%, #0000 101%)
+      calc(50% - 48px) 0/96px 100%,
+    radial-gradient(47.34px at 50% -40.8px, #0000 99%, #000 101%) 50% 24px/96px
+      100% repeat-x;
 }
 
 body {
@@ -16,6 +20,10 @@ h3 {
   font-family: var(--heading-font-family);
 }
 
+.container {
+  max-width: 1100px;
+}
+
 h1 {
   font-weight: 700;
   font-size: 96px;
@@ -28,7 +36,13 @@ h1 {
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 45px;
+}
+
+.img-work {
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }
 
 .content-container h2 {
@@ -212,22 +226,59 @@ footer .email-link:hover {
   margin: 0 auto;
   display: block;
 }
+
+.container {
+  max-width: 1400px;
+}
+
+.project-links {
+  padding: 12px 10px;
+}
+
+.project-details {
+  background-color: #6c63ff;
+  padding: 3rem;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 40px;
+  }
+
+  .project-links {
+    margin-bottom: 8px;
+  }
+
+  .work-card-wrapper {
+    margin-bottom: 0.4rem;
+  }
+
+  .weather-app-wrapper {
+    padding-top: 16px;
+  }
+
+  .img-work {
+    height: auto;
+  }
+
+  .weather-container {
+    padding-bottom: 16px;
   }
 
   h2 {
     font-size: 35px;
   }
 
+  h5 {
+    font-size: 14px;
+  }
   .content-container {
     text-align: center;
     padding: 30px 20px;
   }
 
   .content-container h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .hero {
